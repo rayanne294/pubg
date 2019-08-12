@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.39)), url(../img/pubmapas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*============= INICIO DO MENU =================*/
+
+.menu ul .pub {
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+#pubg{
+    position: absolute;
+    left:0
+}
+
+.menu ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    background-color: white;
+    justify-content: flex-end
+}
+
+.menu ul li a {
+    padding: 15px 10px;
+    display: inline-block;
+    font-size: 23px;
+    color: black;
+    text-decoration: none
+}
+
+.menu ul li a:hover {   
+    background-color:  rgb(229, 255, 0)
+}
+
+div.menu {
+    opacity: 0.3;
+    position:sticky;
+    top:1px;
+}
+
+div.menu:hover {
+    opacity: 1;
+}
+.menu i {
+    font-size:17px;
+}
+
+.pub {
+    animation:pub 5s linear infinite;
+}
+
+@keyframes pub {
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+/*============= FIM DO MENU =================*/
+
+
+h2 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    background-color: gainsboro;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);
+    width: 150px;
+    margin-left: 150px;
+    margin-right: 100px;
+  
+}
+
+div .mapa {
+    width: 350px;
+    margin-left: 40px;
+    border: 5px solid yellow;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:100px;
+    
+}
+
+main div {
+    margin-top:55px;
+}
+
+main div:hover {
+    transform:scale(1.2)
+}
+
+main div:hover {
+    transition: transform 1s;
+    will-change: scale;
+}
+
+@media all and (min-width:960px) {
+    .menu ul {
+        display:flex;
+        justify-content: space-around;
+        
+    }
+    main {
+        display:grid;
+        grid-template-rows: 1fr,1fr;
+        grid-template-columns: 1fr,1fr;
+        grid-gap: 30px;
+        justify-content: center;
+    }
+    .erangel {
+        grid-row: 1/2
+    }
+    .miramar {
+        grid-row:1/2;
+        grid-columns:2/3
+    }
+}   

@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    background-color: gainsboro
+}
+
+/*============= INICIO DO MENU =================*/
+
+.menu {
+    position: sticky;
+    top: 1px;
+}
+
+.menu ul .pub {
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.menu li a:hover {
+    background-color:  rgb(229, 255, 0)
+}
+
+div.menu {
+    opacity: 0.3;
+    position:sticky;
+    top:1px;
+}
+
+div.menu:hover {
+    opacity: 1;
+}
+#pubg {
+    position: absolute;
+    left: 0;
+    animation: anim 1s linear infinite;
+}
+
+.menu ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    background-color: white;
+    justify-content: flex-end
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    padding: 15px 10px;
+    display: inline-block;
+    font-size: 21px;
+    color: black
+}
+
+.menu i {
+    font-size:17px;
+}
+
+.pub {
+    animation:pub 5s linear infinite;
+}
+
+@keyframes pub {
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+/*============= FIM DO MENU =================*/
+
+main p {
+    font-family: 'Raleway', sans-serif;
+    width: 400px;
+    height: auto;
+    background: #808080;
+    color: #FFF;
+    margin-left: 20px;
+    padding: 20px;
+    border: 5px solid rgb(54,54,54);
+    border-radius: 15px;
+    box-shadow: inset 0 0 1em rgb(5, 5, 5), 0 0 1em yellow
+}
+
+main img {
+    width: 400px;
+}
+
+/*============= INICIO DO SUMARIO =================*/
+
+main dl {
+    list-style-type: none;   
+}
+
+.sumario {
+    margin-top: -10px;
+    background-image: url(../img/blob_2anv.png);
+    background-size: cover;
+    height: 500px;
+    background-position-x: 60%;
+}
+
+.sumario ul {
+    margin-bottom:70px;
+}
+
+.sumario dl li a:visited,a:link  {
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sumario dl li a:hover {
+    color: yellow;
+}
+
+.sumario dl ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sumario dl ul h1 {
+    color: black;
+    text-align: center;
+    background-color:gainsboro;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);
+    width: 350px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.sumario dl li {
+    margin-left: 10px
+}
+
+/*============= FIM DO SUMARIO =================*/
+
+h1 {
+    margin-left: 30px;
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 70px;
+}
+
+.center div {
+    margin-right: 70px;
+}
+
+.vector img {
+    margin-bottom:12px;
+}
+
+.s686 img {
+    margin-bottom:19px;
+}
+
+.p92 img {
+    margin-bottom:20px;
+}
+
+.smoke img {
+    margin-bottom:19px;
+}
+
+#desert {
+    width:300px;
+}
+.ex img {
+    width:200px;
+    margin-left: 100px;
+}
+.corpo img {
+    width:500px;
+}
+
+h1 i {
+    color:black;
+}
+
+@media all and (min-width:960px) {
+    .menu ul {
+        display:flex;
+        justify-content: space-around;
+    }
+    .sumario {
+        height:600px;
+    }
+    dl li {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (min-width:1020px) {
+    .sumario {
+        height: 720px;
+    }
+    dl li {
+        margin-bottom: 20px;
+    }
+}
